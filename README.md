@@ -50,12 +50,20 @@ Ele tem como objetivo a obtenção de dados meteorológicos através de sensores
 <span id="entregas"></span>
 <h1 align="center">Entregas</h1>
 O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 entregas com sprints de 21 dias de duração cada uma.
-<br /><br />
+
+<br />
+<img src="docs\img\TimelineCycle.png" alt="Gif da Entrega 1">
+
+<br />
+
+<b>Resultado das sprints:</b>
+
+
 
 <details>
 <summary><b>Sprint 1</b></summary>
 <br />
-<p>Focadas no desenvolvimento da aplicação web, mais especificamente os CRUDs de alerta, estação, usuário e parâmetro.</p>
+<p>Focada no desenvolvimento da aplicação web, mais especificamente os CRUDs de alerta, estação, usuário e parâmetro.</p>
 
 <b>Demonstração:</b>
 
