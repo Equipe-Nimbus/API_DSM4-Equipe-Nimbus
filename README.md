@@ -30,7 +30,7 @@ Ele tem como objetivo a obtenção de dados meteorológicos através de sensores
   <img src="https://img.shields.io/badge/react-%2361DAFB?style=for-the-badge&logo=react&logoColor=black">
   <img src="https://img.shields.io/badge/next.js-%23000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
   <img src="https://img.shields.io/badge/postgresql-%234169E1?style=for-the-badge&logo=postgresql&logoColor=black">
-  <img src="https://img.shields.io/badge/typeorm-black?style=for-the-badge"></img>
+  <img src="https://img.shields.io/badge/typeorm-black?style=for-the-badge">
   <img src="https://img.shields.io/badge/jest-%23C21325?style=for-the-badge&logo=jest&logoColor=black">  
   <img src="https://img.shields.io/badge/tailwind_css-%2306B6D4?style=for-the-badge&logo=tailwindcss&logoColor=black">
 </p>
@@ -65,18 +65,7 @@ O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 ent
 <br />
 <p>Focada no desenvolvimento da aplicação web, mais especificamente os CRUDs de alerta, estação, usuário e parâmetro.</p>
 
-<b>Demonstração:</b>
-
-<img src="docs\Sprit1\API-4DSM-s1.gif" alt="Gif da Entrega 1">
-
-<b>Burndown:</b>
-
-<img src="docs\Sprit1\BurnDown1.jpg">
-
-</details>
-
-<span id="backlog"></span>
-<h1 align="center">Backlog</h1>
+<b>Sprint Backlog:<b>
 
 | Sprint | Funcionalidade |
 | :--:   | :-----------:  |
@@ -95,17 +84,94 @@ O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 ent
 | **01** | Cadastro de Alertas |
 | **01** | Listagem de Alertas |
 | **01** | Alteração de Dados de Alertas |
-| **01** | Deleção de Alertas |
-| **01** | Entrada/Login como Perfil Administrador |
-| **02** | Recepção dos dados das estações meteorológicas |
-| **02** | Tratamento dos dados  recebidos das medições das estações | 
-| **02** | Dashboards para visualização dos parâmetros meteorológicos | 
-| **03** | Tutorial para os alunos do significado de cada parâmetro meteorológico | 
-| **03** | 3 relatórios com base nas estatisticas das medições |
-| **03** | Disparo de Alertas | 
-| **04** | Entrada/Login como Perfil Visualizador |
-| **04** | Entrada/Login como Perfil Público |
-| **04** | Montagem de uma estação meteorológica |
+
+<b>Tarefas:</b>
+
+<p>O grupo optou pela organização das tarefas fazendo uso de épicos, User Story, tarefas e subtarefas.</p>
+<p>Irei usar como exemplo o épico do CRUD de estação, com a User Story relacionada ao cadastro de estação</p>
+
+| Tipo | Descrição |
+| :--:   | :-----------:  |
+| **Épico** | CRUD dos objetos do tipo "estacao" |
+| **User Story**| Cadastro dos objetos do tipo "estacao" |
+| **Subtarefa** | (FRONT) Criar componente da tela de cadastro dos objetos do tipo "estacao" |
+| **Subtarefa** | (FRONT) Estilizar o componente da tela de cadastro dos objetos do tipo "estacao" |
+| **Subtarefa** | (BACK) Criar a entidade do tipo "estacao" |
+| **Subtarefa** | (BACK) Criar a rota POST para cadastro dos objetos do tipo "estacao" e a função objetivo para criar os objetos desse tipo |
+
+<p>Houve também tarefas que não estavam relacionadas a nenhum épico ou User Story. Um exemplo disso foram as tarefas de configuração de ambiente e de correção dos testes exploratórios</p>
+
+| Tipo | Descrição |
+| :--:   | :-----------:  |
+| **Tarefa** | (FRONT) Configuração das dependências (jest, Axios, React) |
+| **Tarefa** | (BACK) Configuração das dependências (jest, express, dotenv e TypeORM) |
+
+<p>Todas as tarefas podem ser consultadas clicando <a href = "https://docs.google.com/spreadsheets/d/1q-DvcxZ_NiTByh3u8eYzXlgmcT8N0IaQ3varae1bzhQ/edit?usp=sharing">aqui</a></p>
+</details>
+
+
+<span id="backlog"></span>
+<h1 align="center">Backlog</h1>
+
+| Sprint | Funcionalidade | User Story |
+| :--:   | :-----------:  | :--: |
+| **01** | Cadastro de Tipo Parâmetros | US01 |
+| **01** | Listagem de Tipo Parâmetros | US02 |
+| **01** | Alteração de Dados de Tipo Parâmetros | US03 |
+| **01** | Deleção de Tipo Parâmetros | US04 |
+| **01** | Cadastro de Estações | US05 |
+| **01** | Listagem de Estaçõess | US06 |
+| **01** | Alteração de Dados de Estações | US07 |
+| **01** | Deleção de Estações | US08 |
+| **01** | Cadastro de Usuários | US09 |
+| **01** | Listagem de Usuários | US10 |
+| **01** | Alterações de Dados de Usuários | US11 |
+| **01** | Deleção de Usuários | US12 |
+| **01** | Cadastro de Alertas | US13 |
+| **01** | Listagem de Alertas | US14 |
+| **01** | Alteração de Dados de Alertas | US15 |
+| **01** | Deleção de Alertas | US16 |
+| **01** | Entrada/Login como Perfil Administrador | US17 |
+| **02** | Recepção dos dados das estações meteorológicas | US18 |
+| **02** | Tratamento dos dados  recebidos das medições das estações | US19 |
+| **02** | Dashboards para visualização dos parâmetros meteorológicos | US20 | 
+| **03** | Tutorial para os alunos do significado de cada parâmetro meteorológico | US21 |
+| **03** | 3 relatórios com base nas estatisticas das medições | US22 |
+| **03** | Disparo de Alertas | US23 | 
+| **04** | Entrada/Login como Perfil Visualizador | US24 |
+| **04** | Entrada/Login como Perfil Público | US25 |
+| **04** | Montagem de uma estação meteorológica | US26 |
+
+<b>User Story</b>
+
+| User Story | Descrição |
+| :--: | :-----------:  |
+| US01 | Como administrador, quero cadastrar diferentes tipos de parâmetros para que eu possa atrela-los às estações de medição |
+| US02 | Como administrador, quero ter acesso aos tipos de parâmetros já cadastrados para que eu saiba os tipos que já existem no sistema |
+| US03 | Como administrador, quero alterar tipos de parâmetros já cadastrados para corrigir possíveis erros de cadastro |
+| US04 | Como administrador, quero deletar tipos de parâmetros para não poluir a lista de parâmetros com aqueles que não são mais úteis |
+| US05 | Como administrador, quero cadastrar novas estações para registrar as estações em uso |
+| US06 | Como usuário do sistema, quero ter acesso às informações das estações em uso para me informar sobre quais lugares estão tendo o seu clima monitorado |
+| US07 | Como administrador, quero alterar os dados das estações já cadastradas para inserir novos tipos parametros e mudar o seu local |
+| US08 | Como administrador, quero deletar uma estação cadastrada para que o sistema deixe de coletar dados de uma estação já desativada |
+| US09 | Como administrador, quero cadastrar novos administradores para me ajudar no gerenciamento do sistema |
+| US10 | Como administrador, quero ver quais usuários estão cadastrados no sistema para gerenciar quem tem acesso à funcionalidades mais protegidas |
+| US11 | Como administrador, quero alterar dados de usuários já cadastrados para corrigir possíveis erros de cadastro |
+| US12 | Como administrador, quero deletar usuários já cadastrados para para tirar o acesso desses usuários a funcionalidades protegidas do sistema |
+| US13 | Como administrador, quero cadastrar alertas de medição para para ser avisado de situações climáticas perigosas |
+| US14 | Como administrador, quero acessar os alertas já cadastrados para saber quais alertas já existem e gerenciá-los |
+| US15 | Como administrador, quero alterar um alerta já cadastrado para corrigir possíveis erros no cadastro |
+| US16 | Como administrador, quero deletar alertas cadastrados para para eliminar alertas que já não são úteis |
+| US17 | Como administrador, quero logar no sistema para gerenciar as funcionalidades das estações |
+| US18 | Como administrador, quero receber e armazenar os dados enviados pelas estações para fornecer informações sobre o ambiente |
+| US19 | Como administrador, quero receber e tratar os dados das estações para dar informações mais precisas para o usuário do sistema" |
+| US20 | Como usuário do sistema, quero ter acesso a um dashboard que permita a visualização dos dados meteorológicos para acompanhar as condições climáticas de forma intuitiva |
+| US21 | Como usuário do sistema, quero ter acesso à informações sobre o funcionamento das estações para compreender melhor os dados fornecidos pela estação |
+| US22 | Como admnistrador, quero gerar relatórios sobre as medidas recebidas para ter um histórico de suas variações |
+| US23 | Como usuário do sistema, quero receber alertas de medidas que ultrapassarem os parâmetros esperados para estar ciente de situações críticas |
+| US24 | Como usuário visualizador, quero entrar no sistema para acessar informações das estações |
+| US25 | Como usuário público, quero entrar no sistema para acessar informações do tempo |
+| US26 | Como administrador, quero montar uma estação meteorológica para fazer medições reais do ambiente |
 
 <span id="arquitetura"></span>
 <h1 align="center">Arquitetura</h1>
