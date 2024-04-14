@@ -1,0 +1,6 @@
+[submodule "API-DSM4-Frontend"]
+	path = API-DSM4-Frontend
+	url = https://github.com/Equipe-Nimbus/API-DSM4-Frontend
+[submodule "API-DSM4-Backend"]
+	path = API-DSM4-Backend
+	url = https://github.com/Equipe-Nimbus/API-DSM4-Backend
