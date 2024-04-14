@@ -85,6 +85,14 @@ O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 ent
 | **01** | Listagem de Alertas |
 | **01** | Alteração de Dados de Alertas |
 
+<b>Demonstração:</b>
+
+<img src="docs\Sprit1\API-4DSM-s1.gif" alt="Gif da Entrega 1">
+
+<b>Burndown:</b>
+
+<img src="docs\Sprit1\BurnDown1.jpg">
+
 <b>Tarefas:</b>
 
 <p>O grupo optou pela organização das tarefas fazendo uso de épicos, User Story, tarefas e subtarefas.</p>
