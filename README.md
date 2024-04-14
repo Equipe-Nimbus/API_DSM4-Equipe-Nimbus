@@ -7,14 +7,12 @@
     <a href="#tecnologias">Tecnologias</a> |
     <a href="#equipe">Equipe</a> | 
     <a href="#entregas">Entregas</a> | 
-    <a href="#backlogs">Backlogs</a> |
-    <a href="#links">Links</a> |
-    <a href="#versao">Versionamento</a> |
-    <a href="#gif">Gif</a> |
+    <a href="#backlog">Backlog</a> |
+    <a href="#arquitetura">Arquitetura</a> | 
 </p>
 
 <span id="sobre"></span>
-<h1 align="center">Sobre:</h1>
+<h1 align="center">Sobre</h1>
 <p>
 Esse projeto foi desenvolvido pelos alunos do 4º semestre da FATEC Prof Jessen Vidal, São José dos Campos em parceria com a empresa Tecsus.
 </p>
@@ -22,8 +20,10 @@ Esse projeto foi desenvolvido pelos alunos do 4º semestre da FATEC Prof Jessen 
 Ele tem como objetivo a obtenção de dados meteorológicos através de sensores acoplados nas estações e disponibilizar esses dados de forma gráfica com a utilização de dashboards, para informar a população da região em que essa estação foi instalada e educar sobre a importância desses dados.
 </p>
 
+
+
 <span id="tecnologias"></span>
-<h1 align="center">Tecnologias/Pré-Requisitos:</h1>
+<h1 align="center">Tecnologias/Pré-Requisitos</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/node.js-%23339933?style=for-the-badge&logo=nodedotjs&logoColor=black">
   <img src="https://img.shields.io/badge/typescript-%233178C6?style=for-the-badge&logo=typescript&logoColor=black">
@@ -36,7 +36,7 @@ Ele tem como objetivo a obtenção de dados meteorológicos através de sensores
 </p>
 
 <span id="equipe"></span>
-<h1 align="center">Equipe:</h1>
+<h1 align="center">Equipe</h1>
 
   | Função | Foto | Nome | GitHub | LinkedIn |
   | :-: | :-: | :-: | :-: | :-: |
@@ -48,8 +48,79 @@ Ele tem como objetivo a obtenção de dados meteorológicos através de sensores
   | Frontend Dev | <img src="docs/img/fotoVinicius.png" alt="Foto Vinícius"> | Vinicius de Oliveira Laranjeiro | [GitHub](https://github.com/noo-e) | [LinkedIn](https://www.linkedin.com/in/vinicius-laranjeiro-296b371bb) |
 
 <span id="entregas"></span>
-<h1 align="center">Entregas:</h1>
+<h1 align="center">Entregas</h1>
 O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 entregas com sprints de 21 dias de duração cada uma.
 <br /><br />
-<img src="">
+
+<details>
+<summary><b>Sprint 1</b></summary>
 <br />
+<p>Focadas no desenvolvimento da aplicação web, mais especificamente os CRUDs de alerta, estação, usuário e parâmetro.</p>
+
+<b>Demonstração:</b>
+
+<img src="docs\Sprit1\API-4DSM-s1.gif" alt="Gif da Entrega 1">
+
+<b>Burndown:</b>
+
+<img src="docs\Sprit1\BurnDown1.jpg">
+
+</details>
+
+<span id="backlog"></span>
+<h1 align="center">Backlog</h1>
+
+| Sprint | Funcionalidade |
+| :--:   | :-----------:  |
+| **01** | Cadastro de Tipo Parâmetros |
+| **01** | Listagem de Tipo Parâmetros |
+| **01** | Alteração de Dados de Tipo Parâmetros |
+| **01** | Deleção de Tipo Parâmetros |
+| **01** | Cadastro de Estações |
+| **01** | Listagem de Estaçõess |
+| **01** | Alteração de Dados de Estações |
+| **01** | Deleção de Estações |
+| **01** | Cadastro de Usuários |
+| **01** | Listagem de Usuários |
+| **01** | Alterações de Dados de Usuários |
+| **01** | Deleção de Usuários |
+| **01** | Cadastro de Alertas |
+| **01** | Listagem de Alertas |
+| **01** | Alteração de Dados de Alertas |
+| **01** | Deleção de Alertas |
+| **01** | Entrada/Login como Perfil Administrador |
+| **02** | Recepção dos dados das estações meteorológicas |
+| **02** | Tratamento dos dados  recebidos das medições das estações | 
+| **02** | Dashboards para visualização dos parâmetros meteorológicos | 
+| **03** | Tutorial para os alunos do significado de cada parâmetro meteorológico | 
+| **03** | 3 relatórios com base nas estatisticas das medições |
+| **03** | Disparo de Alertas | 
+| **04** | Entrada/Login como Perfil Visualizador |
+| **04** | Entrada/Login como Perfil Público |
+| **04** | Montagem de uma estação meteorológica |
+
+<span id="arquitetura"></span>
+<h1 align="center">Arquitetura</h1>
+
+<p>
+A arquitetura de microserviços para monitoramento meteorológico proposta oferece uma abordagem escalável e flexível para lidar com a coleta, processamento e visualização de dados de estações meteorológicas. Aqui está uma visão geral do fluxo de dados e dos componentes envolvidos:
+</p>
+<img src="docs/img/ArquiteturaNimbus.png" alt="Imagem arquitetura">
+
+- **Estações Meteorológicas:** 
+  As estações meteorológicas são dispositivos distribuídos em várias localizações que coletam dados meteorológicos em tempo real, como temperatura, umidade, pressão atmosférica, entre outros.
+
+- **Microserviço de Recepção:** 
+  Um microserviço dedicado recebe os dados enviados pelas estações meteorológicas. Este serviço é responsável por validar e armazenar esses dados em um banco de dados não relacional, otimizado para armazenamento de alta velocidade e escalabilidade horizontal.
+
+- **Microserviço de Tratamento:** 
+  Após receber os dados, outro microserviço entra em ação para processá-los. Este serviço é encarregado de aplicar regras de negócio e determinar se alguma medição excede os limites predefinidos, acionando alertas quando necessário. As medições que acionam alertas são armazenadas em um banco de dados não relacional para acesso rápido e análises posteriores.
+
+- **Banco de Dados Relacional:** 
+  Tanto as medições que acionam quanto as que não acionam alertas são persistidas em um banco de dados relacional. Isso permite consultas complexas e relacionamentos entre os dados, fornecendo uma base sólida para análises históricas e relatórios.
+
+- **Frontend React:** 
+  Um aplicativo frontend React oferece uma interface de usuário amigável para visualizar as medições meteorológicas e os alertas correspondentes. Ele faz solicitações ao backend Node.js para recuperar os dados necessários.
+
+- **Backend Node.js:** 
+  O backend Node.js é responsável por servir o frontend React e gerenciar todas as operações CRUD (Create, Read, Update, Delete) relacionadas aos alertas, usuários, parâmetros das medições, medições e estações meteorológicas. Ele interage com os bancos de dados subjacentes para buscar e persistir os dados conforme necessário.
