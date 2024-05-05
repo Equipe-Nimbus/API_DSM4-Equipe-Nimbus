@@ -44,7 +44,6 @@ Ele tem como objetivo a obtenção de dados meteorológicos através de sensores
   | Product Owner | <img src="docs/img/fotoJose.png" alt="Foto Jose"> | José V. H. Lopes de Souza | [GitHub](https://github.com/HenningerJv) | [LinkedIn](https://www.linkedin.com/in/jose-victor-henninger-7661b928a/) |
   | Scrum Master | <img src="docs/img/fotoMatheus.png" alt="Foto Matheus"> | Matheus Fernando Vieira de Melo | [GitHub](https://github.com/Matheusfvm) | [LinkedIn](www.linkedin.com/in/matheus-melo-b09474224) |
   | Frontend Dev | <img src="docs/img/fotoMurilo.png" alt="Foto Murilo"> | Murilo Henrique Sangi da Silva Lima | [GitHub](https://github.com/MuriloLima03) | [LinkedIn](https://www.linkedin.com/in/murilo-sangi-062780285/) |
-  | Frontend Dev | <img src="docs/img/fotoRenan.png" alt="Foto Renan"> | Renan Souza Neves | [Github](https://github.com/Renan-Neves) | [LinkedIn](https://br.linkedin.com/in/renan-neves-286735224) |
   | Frontend Dev | <img src="docs/img/fotoVinicius.png" alt="Foto Vinícius"> | Vinicius de Oliveira Laranjeiro | [GitHub](https://github.com/noo-e) | [LinkedIn](https://www.linkedin.com/in/vinicius-laranjeiro-296b371bb) |
 
 <span id="entregas"></span>
@@ -56,42 +55,44 @@ O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 ent
 
 <br />
 
-<b>Resultado das sprints:</b>
+<h2>Resultado das sprints:</h2>
 
 
 
 <details>
-<summary><b>Sprint 1</b></summary>
+<summary><h2>Sprint 1</h2></summary>
 <br />
 <p>Focada no desenvolvimento da aplicação web, mais especificamente os CRUDs de alerta, estação, usuário e parâmetro.</p>
 
 <b>Sprint Backlog:<b>
 
-| Sprint | Funcionalidade |
-| :--:   | :-----------:  |
-| **01** | Cadastro de Tipo Parâmetros |
-| **01** | Listagem de Tipo Parâmetros |
-| **01** | Alteração de Dados de Tipo Parâmetros |
-| **01** | Deleção de Tipo Parâmetros |
-| **01** | Cadastro de Estações |
-| **01** | Listagem de Estaçõess |
-| **01** | Alteração de Dados de Estações |
-| **01** | Deleção de Estações |
-| **01** | Cadastro de Usuários |
-| **01** | Listagem de Usuários |
-| **01** | Alterações de Dados de Usuários |
-| **01** | Deleção de Usuários |
-| **01** | Cadastro de Alertas |
-| **01** | Listagem de Alertas |
-| **01** | Alteração de Dados de Alertas |
+| Sprint | Funcionalidade | Prioridade |
+| :--:   | :-----------:  | :--------: |
+| **01** | Cadastro de Tipo Parâmetros | Alta |
+| **01** | Listagem de Tipo Parâmetros | Alta |
+| **01** | Alteração de Dados de Tipo Parâmetros | Alta |
+| **01** | Cadastro de Estações | Alta |
+| **01** | Listagem de Estaçõess | Alta |
+| **01** | Alteração de Dados de Estações | Alta 
+| **01** | Deleção de Tipo Parâmetros | Média ||
+| **01** | Deleção de Estações | Média |
+| **01** | Cadastro de Usuários | Média |
+| **01** | Cadastro de Alertas | Média |
+| **01** | Alteração de Dados de Alertas | Média |
+| **01** | Listagem de Usuários | Baixa |
+| **01** | Alterações de Dados de Usuários | Baixa |
+| **01** | Deleção de Usuários | Baixa |
+| **01** | Listagem de Alertas | Baixa |
+| **01** | Entrada/Login como Perfil Administrador | Baixa |
+
 
 <b>Demonstração:</b>
 
-<img src="docs\Sprit1\API-4DSM-s1.gif" alt="Gif da Entrega 1">
+<img src="docs/sprint1/API-4DSM-s1.gif" alt="Gif da Entrega 1">
 
 <b>Burndown:</b>
 
-<img src="docs\Sprit1\BurnDown1.jpg">
+<img src="docs\sprint1\BurnDown1.jpg">
 
 <b>Tarefas:</b>
 
@@ -117,38 +118,84 @@ O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 ent
 <p>Todas as tarefas podem ser consultadas clicando <a href = "https://docs.google.com/spreadsheets/d/1q-DvcxZ_NiTByh3u8eYzXlgmcT8N0IaQ3varae1bzhQ/edit?usp=sharing">aqui</a></p>
 </details>
 
+<details>
+<summary><h2>Sprint 2</h2></summary>
+<br />
+<p>Focada no desenvolvimento dos serviços de recepção e tratamento das medições e nos dashboards gerais da aplicação e específicos de estação.</p>
+
+<b>Sprint Backlog:<b>
+
+| Sprint | Funcionalidade | Prioridade |
+| :--:   | :-----------:  | :--------: |
+| **02** | Recepção dos dados das estações meteorológicas | Alta |
+| **02** | Tratamento dos dados  recebidos das medições das estações | Alta |
+| **02** | Dashboards para visualização dos parâmetros meteorológico | Média |
+
+<b>Demonstração:</b>
+
+<img src="docs/sprint2/API-4DSM-s2.gif" alt="Gif da Entrega 1">
+
+<b>Burndown:</b>
+
+<img src="docs/sprint2/burndown2.png">
+
+<b>Tarefas:</b>
+organização
+<p>O grupo optou pela  das tarefas fazendo uso de épicos, User Story, tarefas e subtarefas.</p>
+<p>Irei usar como exemplo o épico do da recepção do dados das estações meteorológicas</p>
+
+| Tipo | Descrição |
+| :--:   | :-----------:  |
+| **Épico** | Recepção dos dados das estações meteorológicas |
+| **User Story**| Como administrador, quero receber e armazenar os dados enviados pelas estações para fornecer informações sobre o ambiente |
+| **Subtarefa** | (BACK) Configurar o Banco não relacional (Mongo) para guardar os dados recebidos das estações |
+| **Subtarefa** | (BACK) Criar uma rota POST e a função objetivo que irá guardar os dados das estações no MongoBD |
+| **Subtarefa** | (BACK) Criar função que avisa o serviço de tratamento via axios (ou outra biblioteca) que uma nova medição foi adicionada ao banco. |
+
+<p>Houve também tarefas de melhoria e correção que vieram da sprint 1, principalmente relacionadas ao cadastro e alteração de estações</p>
+
+| Tipo | Descrição |
+| :--:   | :-----------:  |
+| **Tarefa** | (BACK) No cadastro de estação deve se validar os tipos parâmetros para não haver tipos parâmetros com nome nem unidades iguais no cadastro |
+| **Tarefa** | (CORRECAO-BACK) Corrigir um falha na alteração de estação referente a mudança de tipo do atributo "idEstação" |
+| **Tarefa** | (FRONT) No cadastro de estação não deve ser possível atrelar tipos parâmetros de nomes e unidades iguais |
+
+<p>Todas as tarefas podem ser consultadas clicando <a href = "https://docs.google.com/spreadsheets/d/1e4ArZZeLIIL8R2cUQ7j2FXgcxJob1i7PbtHt_gRdVrk/edit?usp=sharing">aqui</a></p>
+</details>
+
+
 
 <span id="backlog"></span>
 <h1 align="center">Backlog</h1>
 
-| Sprint | Funcionalidade | User Story |
-| :--:   | :-----------:  | :--: |
-| **01** | Cadastro de Tipo Parâmetros | US01 |
-| **01** | Listagem de Tipo Parâmetros | US02 |
-| **01** | Alteração de Dados de Tipo Parâmetros | US03 |
-| **01** | Deleção de Tipo Parâmetros | US04 |
-| **01** | Cadastro de Estações | US05 |
-| **01** | Listagem de Estaçõess | US06 |
-| **01** | Alteração de Dados de Estações | US07 |
-| **01** | Deleção de Estações | US08 |
-| **01** | Cadastro de Usuários | US09 |
-| **01** | Listagem de Usuários | US10 |
-| **01** | Alterações de Dados de Usuários | US11 |
-| **01** | Deleção de Usuários | US12 |
-| **01** | Cadastro de Alertas | US13 |
-| **01** | Listagem de Alertas | US14 |
-| **01** | Alteração de Dados de Alertas | US15 |
-| **01** | Deleção de Alertas | US16 |
-| **01** | Entrada/Login como Perfil Administrador | US17 |
-| **02** | Recepção dos dados das estações meteorológicas | US18 |
-| **02** | Tratamento dos dados  recebidos das medições das estações | US19 |
-| **02** | Dashboards para visualização dos parâmetros meteorológicos | US20 | 
-| **03** | Tutorial para os alunos do significado de cada parâmetro meteorológico | US21 |
-| **03** | 3 relatórios com base nas estatisticas das medições | US22 |
-| **03** | Disparo de Alertas | US23 | 
-| **04** | Entrada/Login como Perfil Visualizador | US24 |
-| **04** | Entrada/Login como Perfil Público | US25 |
-| **04** | Montagem de uma estação meteorológica | US26 |
+| Sprint | Funcionalidade | User Story | Prioridade |
+| :--:   | :-----------:  | :--------: | :--------: |
+| **01** | Cadastro de Tipo Parâmetros | US01 | Alta |
+| **01** | Listagem de Tipo Parâmetros | US02 | Alta |
+| **01** | Alteração de Dados de Tipo Parâmetros | US03 | Alta |
+| **01** | Deleção de Tipo Parâmetros | US04 | Alta |
+| **01** | Cadastro de Estações | US05 | Alta |
+| **01** | Listagem de Estaçõess | US06 | Alta |
+| **01** | Alteração de Dados de Estações | US07 | Alta |
+| **01** | Deleção de Estações | US08 | Alta |
+| **01** | Cadastro de Usuários | US09 | Média |
+| **01** | Listagem de Usuários | US10 | Média |
+| **01** | Alterações de Dados de Usuários | US11 | Média |
+| **01** | Deleção de Usuários | US12 | Média |
+| **01** | Cadastro de Alertas | US13 | Média |
+| **01** | Listagem de Alertas | US14 | Média |
+| **01** | Alteração de Dados de Alertas | US15 | Média |
+| **01** | Deleção de Alertas | US16 |  Média  |
+| **01** | Entrada/Login como Perfil Administrador | US17 | Média |
+| **02** | Recepção dos dados das estações meteorológicas | US18 | Alta |
+| **02** | Tratamento dos dados  recebidos das medições das estações |   US19 | Alta |
+| **02** | Dashboards para visualização dos parâmetros meteorológicos | US20 | Média |
+| **03** | Tutorial para os alunos do significado de cada parâmetro meteorológico | US21 | Baixa |
+| **03** | 3 relatórios com base nas estatisticas das medições | US22 | Média |
+| **03** | Disparo de Alertas | US23 | Média |
+| **04** | Entrada/Login como Perfil Visualizador | US24 | Baixa |
+| **04** | Entrada/Login como Perfil Público | US25 | Baixa |
+| **04** | Montagem de uma estação meteorológica | US26 | Baixa |
 
 <b>User Story</b>
 
