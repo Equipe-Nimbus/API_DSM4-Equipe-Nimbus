@@ -121,7 +121,7 @@ O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 ent
 <details>
 <summary><h2>Sprint 2</h2></summary>
 <br />
-<p>Focada no desenvolvimento dos serviços de recepção e tratamento das medições e nos dashboards gerais da aplicação e específicos de estação.</p>
+<p>Focada no desenvolvimento dos serviços de recepção e tratamento das medições e nos dashboards gerais e específicos de estação.</p>
 
 <b>Sprint Backlog:<b>
 
