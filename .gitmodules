@@ -4,3 +4,9 @@
 [submodule "API-DSM4-Backend"]
 	path = API-DSM4-Backend
 	url = https://github.com/Equipe-Nimbus/API-DSM4-Backend
+[submodule "API-DSM4-Recepcao"]
+	path = API-DSM4-Recepcao
+	url = https://github.com/Equipe-Nimbus/API-DSM4-Recepcao.git
+[submodule "API-DSM4-Tratamento"]
+	path = API-DSM4-Tratamento
+	url = https://github.com/Equipe-Nimbus/API-DSM4-Tratamento.git
