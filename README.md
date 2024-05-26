@@ -33,6 +33,10 @@ Ele tem como objetivo a obtenção de dados meteorológicos através de sensores
   <img src="https://img.shields.io/badge/typeorm-black?style=for-the-badge">
   <img src="https://img.shields.io/badge/jest-%23C21325?style=for-the-badge&logo=jest&logoColor=black">  
   <img src="https://img.shields.io/badge/tailwind_css-%2306B6D4?style=for-the-badge&logo=tailwindcss&logoColor=black">
+  <img src="https://img.shields.io/badge/mongo-db?style=for-the-badge&logo=mongodb&logoColor=%23FFFFFF&color=%2347A248
+  ">
+  <img src="https://img.shields.io/badge/-arduino-arduino?style=for-the-badge&logo=arduino&color=%2300878F
+  ">
 </p>
 
 <span id="equipe"></span>
@@ -44,6 +48,7 @@ Ele tem como objetivo a obtenção de dados meteorológicos através de sensores
   | Product Owner | <img src="docs/img/fotoJose.png" alt="Foto Jose"> | José V. H. Lopes de Souza | [GitHub](https://github.com/HenningerJv) | [LinkedIn](https://www.linkedin.com/in/jose-victor-henninger-7661b928a/) |
   | Scrum Master | <img src="docs/img/fotoMatheus.png" alt="Foto Matheus"> | Matheus Fernando Vieira de Melo | [GitHub](https://github.com/Matheusfvm) | [LinkedIn](www.linkedin.com/in/matheus-melo-b09474224) |
   | Frontend Dev | <img src="docs/img/fotoMurilo.png" alt="Foto Murilo"> | Murilo Henrique Sangi da Silva Lima | [GitHub](https://github.com/MuriloLima03) | [LinkedIn](https://www.linkedin.com/in/murilo-sangi-062780285/) |
+  | Backend Dev | <img src="docs/img/fotoPedro.png" alt="Foto Pedro"> | Pedro Henrique Silva Almeida | [GitHub](https://github.com/PedroHSdeAlmeida) | [LinkedIn](https://www.linkedin.com/in/pedroalmeidadev/) |
   | Frontend Dev | <img src="docs/img/fotoVinicius.png" alt="Foto Vinícius"> | Vinicius de Oliveira Laranjeiro | [GitHub](https://github.com/noo-e) | [LinkedIn](https://www.linkedin.com/in/vinicius-laranjeiro-296b371bb) |
 
 <span id="entregas"></span>
@@ -133,14 +138,13 @@ O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 ent
 
 <b>Demonstração:</b>
 
-<img src="docs/sprint2/API-4DSM-s2.gif" alt="Gif da Entrega 1">
+<img src="docs/sprint2/API-4DSM-s2.gif" alt="Gif da Entrega 2">
 
 <b>Burndown:</b>
 
 <img src="docs/sprint2/burndown2.png">
 
 <b>Tarefas:</b>
-organização
 <p>O grupo optou pela  das tarefas fazendo uso de épicos, User Story, tarefas e subtarefas.</p>
 <p>Irei usar como exemplo o épico do da recepção do dados das estações meteorológicas</p>
 
@@ -161,6 +165,51 @@ organização
 | **Tarefa** | (FRONT) No cadastro de estação não deve ser possível atrelar tipos parâmetros de nomes e unidades iguais |
 
 <p>Todas as tarefas podem ser consultadas clicando <a href = "https://docs.google.com/spreadsheets/d/1e4ArZZeLIIL8R2cUQ7j2FXgcxJob1i7PbtHt_gRdVrk/edit?usp=sharing">aqui</a></p>
+</details>
+
+<details>
+<summary><h2>Sprint 3</h2></summary>
+<br />
+<p>Essa sprint focou em quatro áreas da aplicação: disparos de alertas, relatórios dos dados das medições e alertas, configuração do código do embarcado e na página com os textos informativos sobre os parâmetros .</p>
+
+<b>Sprint Backlog:<b>
+
+| Sprint | Funcionalidade | Prioridade |
+| :--:   | :-----------:  | :--------: |
+| **03** | Desenvolvimento do software do embarcado | Alta |
+| **03** | Disparo de alertas | Alta |
+| **03** | 3 relatórios com base nas estatisticas das medições | Média |
+| **03** | Tutorial para os alunos do significado de cada parâmetro meteorológico | Baixa |
+
+<b>Demonstração:</b>
+
+<img src="" alt="Gif da Entrega 3">
+
+<b>Burndown:</b>
+
+<img src="docs/sprint3/Burndown3.png">
+
+<b>Tarefas:</b>
+<p>O grupo optou pela  das tarefas fazendo uso de épicos, User Story, tarefas e subtarefas.</p>
+<p>Irei usar como exemplo o épico do da recepção do dados das estações meteorológicas</p>
+
+| Tipo | Descrição |
+| :--:   | :-----------:  |
+| **Épico** | Tutorial para os alunos do significado de cada parâmetro meteorológico |
+| **User Story**| Como usuário do sistema, quero ter acesso à informações sobre o funcionamento das estações para compreender melhor os dados fornecidos pela estação |
+| **Subtarefa** | (PESQUISA) Pesquisar e redigir um texto sobre o sensor de umidade |
+| **Subtarefa** | (FRONT) Criar uma página de exibição para cada um dos textos  do tutorial e estilizar cada uma |
+
+
+<p>Houve também algumas funcionalidades que precisaram ser alteradas da sprint 2, principalmente as que envolviam a recepção dos dados de medição, devido ao embarcado</p>
+
+| Tipo | Descrição |
+| :--:   | :-----------:  |
+| **Tarefa** | (BACK) Alterar a função que confere a existência da estação, para receber o id da placa ao invés do id da estação |
+| **Tarefa** | (BACK) Adicionar na entidade estação uma propriedade chamada "idPlacaEstacao" para vincular o número identificador da placa que fica na estação |
+| **Tarefa** | (FRONT) Criar um campo no cadastro de estação de id da placa da estação |
+
+<p>Todas as tarefas podem ser consultadas clicando <a href = "https://docs.google.com/spreadsheets/d/1IQs-ZGjhDX3y9IucDF79MTZJf0MKLFNXrdh9oJKUIw8/edit?usp=sharing">aqui</a></p>
 </details>
 
 
