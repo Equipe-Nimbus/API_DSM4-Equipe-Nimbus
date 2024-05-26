@@ -10,3 +10,6 @@
 [submodule "API-DSM4-Tratamento"]
 	path = API-DSM4-Tratamento
 	url = https://github.com/Equipe-Nimbus/API-DSM4-Tratamento.git
+[submodule "API-DSM4-Embarcado"]
+	path = API-DSM4-Embarcado
+	url = https://github.com/Equipe-Nimbus/API-DSM4-Embarcado.git

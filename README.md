@@ -33,10 +33,8 @@ Ele tem como objetivo a obtenção de dados meteorológicos através de sensores
   <img src="https://img.shields.io/badge/typeorm-black?style=for-the-badge">
   <img src="https://img.shields.io/badge/jest-%23C21325?style=for-the-badge&logo=jest&logoColor=black">  
   <img src="https://img.shields.io/badge/tailwind_css-%2306B6D4?style=for-the-badge&logo=tailwindcss&logoColor=black">
-  <img src="https://img.shields.io/badge/mongo-db?style=for-the-badge&logo=mongodb&logoColor=%23FFFFFF&color=%2347A248
-  ">
-  <img src="https://img.shields.io/badge/-arduino-arduino?style=for-the-badge&logo=arduino&color=%2300878F
-  ">
+  <img src="https://img.shields.io/badge/mongo-db?style=for-the-badge&logo=mongodb&logoColor=%23FFFFFF&color=%2347A248">
+  <img src="https://img.shields.io/badge/-arduino-arduino?style=for-the-badge&logo=arduino&color=%2300878F">
 </p>
 
 <span id="equipe"></span>
