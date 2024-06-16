@@ -35,6 +35,9 @@ Ele tem como objetivo a obtenção de dados meteorológicos através de sensores
   <img src="https://img.shields.io/badge/tailwind_css-%2306B6D4?style=for-the-badge&logo=tailwindcss&logoColor=black">
   <img src="https://img.shields.io/badge/mongo-db?style=for-the-badge&logo=mongodb&logoColor=%23FFFFFF&color=%2347A248">
   <img src="https://img.shields.io/badge/-arduino-arduino?style=for-the-badge&logo=arduino&color=%2300878F">
+  <img src="https://img.shields.io/badge/cypress-cypress?style=for-the-badge&logo=Cypress&logoColor=%23000000&color=%2369D3A7">
+  <img src="https://img.shields.io/badge/docker-docker?style=for-the-badge&logo=docker&logoColor=%23FFFFFF&color=%232496ED
+  ">
 </p>
 
 <span id="equipe"></span>
@@ -181,7 +184,7 @@ O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 ent
 
 <b>Demonstração:</b>
 
-<img src="" alt="Gif da Entrega 3">
+<img src="./docs/sprint3/API-4DSM-s3.gif" alt="Gif da Entrega 3">
 
 <b>Burndown:</b>
 
@@ -208,6 +211,51 @@ O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 ent
 | **Tarefa** | (FRONT) Criar um campo no cadastro de estação de id da placa da estação |
 
 <p>Todas as tarefas podem ser consultadas clicando <a href = "https://docs.google.com/spreadsheets/d/1IQs-ZGjhDX3y9IucDF79MTZJf0MKLFNXrdh9oJKUIw8/edit?usp=sharing">aqui</a></p>
+</details>
+
+<details>
+<summary><h2>Sprint 4</h2></summary>
+<br />
+<p>Essa sprint foi focada na entrega de requisitos que precisaram ser remanejados (Relatórios, página informativas, dashboard de alertas) e em algumas correções.</p>
+
+<b>Sprint Backlog:<b>
+
+| Sprint | Funcionalidade | Prioridade |
+| :--:   | :-----------:  | :--------: |
+| **04** | Dashboards para visualização dos parâmetros meteorológico | Alta |
+| **04** | Relatório das medições máximas e mínimas dos meses do ano para cada tipo parametro da estação em questão | Média |
+| **04** | Montagem de uma estação meteorológica | Média |
+| **04** | Tutorial para os alunos do significado de cada parâmetro meteorológico | Baixa |
+
+<b>Demonstração:</b>
+
+<img src="" alt="Gif da Entrega 3">
+
+<b>Burndown:</b>
+
+<img src="./docs/sprint4/burndown4.png">
+
+<b>Tarefas:</b>
+<p>O grupo optou pela  das tarefas fazendo uso de épicos, User Story, tarefas e subtarefas.</p>
+<p>Irei usar como exemplo o épico dos relatórios</p>
+
+| Tipo | Descrição |
+| :--:   | :-----------:  |
+| **Épico** | Relatório das medições máximas e mínimas dos meses do ano para cada tipo parâmetro da estação em questão |
+| **User Story**| Como administrador eu quero gerar relatórios sobre as medidas recebidas para ter um histórico de suas variações |
+| **Subtarefa** | (BACK) Criar uma rota GET parametrizada com os filtros de período (Data inicio e Data final) e tipo parâmetro e a função objetivo que realiza essa consulta baseada nos filtros |
+| **Subtarefa** | (FRONT) Alterar o componente do dashboard específico para adicionar um tabela com os dados do relatório e adicionar dois filtros, um filtro de período (Data início - Data término) e outro de tipo parâmetro |
+
+<p>Houve também tarefas de melhoria e correção que vieram da sprint 1, principalmente relacionadas ao cadastro e alteração de estações</p>
+
+| Tipo | Descrição |
+| :--:   | :-----------:  |
+| **Tarefa** | (FRONT) Desenvolver a landing page do projeto |
+| **Tarefa** | (CORREÇÃO-TRATAMENTO) Aplicar o offset e fator dos parâmetros aos alertas gerados |
+| **Tarefa** | (BACK) Iniciar o Banco de dados com um usuário já cadastrado |
+| **Tarefa** | (DEVOPS) Pesquisa sobre frameworks de testes para o front-end |
+
+<p>Todas as tarefas podem ser consultadas clicando <a href = "https://docs.google.com/spreadsheets/d/18PVn4amDch_QelSJZaut4dJFfgURVnnvCshF92_97kY/edit?usp=sharing">aqui</a></p>
 </details>
 
 
@@ -237,11 +285,9 @@ O projeto tem por base a metodologia ágil SCRUM, por isso foi separado em 4 ent
 | **02** | Recepção dos dados das estações meteorológicas | US18 | Alta |
 | **02** | Tratamento dos dados  recebidos das medições das estações |   US19 | Alta |
 | **02** | Dashboards para visualização dos parâmetros meteorológicos | US20 | Média |
-| **03** | Tutorial para os alunos do significado de cada parâmetro meteorológico | US21 | Baixa |
 | **03** | 3 relatórios com base nas estatisticas das medições | US22 | Média |
 | **03** | Disparo de Alertas | US23 | Média |
-| **04** | Entrada/Login como Perfil Visualizador | US24 | Baixa |
-| **04** | Entrada/Login como Perfil Público | US25 | Baixa |
+| **04** | Tutorial para os alunos do significado de cada parâmetro meteorológico | US21 | Baixa |
 | **04** | Montagem de uma estação meteorológica | US26 | Baixa |
 
 <b>User Story</b>
